@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import Card from '../common/Card';
 
 const ProductCard = ({ product }) => {
@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
         )}
       </div>
       <h3 className="text-xl font-semibold mb-2 dark:text-white">{product.name}</h3>
-      <p className="text-gray-600 dark:text-gray-300 mb-4">{product.description}</p>
+      <p className="text-gray-600 dark:text-gray-300 mb-5">{product.description}</p>
       <div className="flex justify-between items-center">
         <span className="text-primary dark:text-primary font-bold">${product.price}</span>
         <button className="bg-primary text-white px-4 py-2 rounded-full hover:bg-secondary transition duration-300">
